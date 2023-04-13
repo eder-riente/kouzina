@@ -1,6 +1,7 @@
 import Navbar from './navbar';
 import { ArrowLeftIcon } from '@heroicons/react/24/outline';
 import { useRouter } from 'next/router';
+import LoginBtn from './login-btn';
 
 export default function Layout({ children }: any) {
   const router = useRouter();
@@ -18,6 +19,7 @@ export default function Layout({ children }: any) {
           ) : (
             false
           )}
+          <LoginBtn />
         </div>
         {children}
       </main>
